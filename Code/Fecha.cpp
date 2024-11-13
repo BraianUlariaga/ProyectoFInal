@@ -94,3 +94,13 @@ void Fecha::FechaSistema() {
     _mes = now->tm_mon + 1;
     _anio = now->tm_year + 1900;
 }
+
+
+int Fecha::AnioActual() {
+    int anio;
+    std::time_t t = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+
+    std::tm* now = std::localtime(&t);
+
+    return anio = now->tm_year + 1900;
+}

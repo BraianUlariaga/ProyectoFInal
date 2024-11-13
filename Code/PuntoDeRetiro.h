@@ -4,9 +4,7 @@
 class PuntoDeRetiro
 {
 public:
-	PuntoDeRetiro()
-	{
-	}
+	PuntoDeRetiro();
 
 	/*Setters*/
 	void setIdPuntoRetiro(int id);

@@ -138,7 +138,7 @@
 	<cstring>
 	"VendedorArchivo.h"
 
-1731289480 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\auto.cpp
+1731465019 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\auto.cpp
 	<iostream>
 	<string>
 	<cstring>
@@ -160,7 +160,7 @@
 	"Fecha.h"
 	"Persona.h"
 
-1731291097 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\fecha.h
+1731533956 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\fecha.h
 	<string>
 	"Validaciones.h"
 
@@ -194,7 +194,7 @@
 1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\facturaarchivo.h
 	"DetalleFactura.h"
 
-1731291138 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\fecha.cpp
+1731533842 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\fecha.cpp
 	"Fecha.h"
 	<iostream>
 	<chrono>
@@ -207,7 +207,7 @@
 	<cstring>
 	"FormaDePagoArchivo.h"
 
-1731283994 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepago.h
+1731534131 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepago.h
 	<string>
 
 1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepagoarchivo.h
@@ -228,14 +228,14 @@
 	<string>
 	<cstring>
 
-1731362607 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiro.cpp
+1731534077 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiro.cpp
 	"Validaciones.h"
 	"PuntoDeRetiro.h"
 	"PuntoDeRetiroArchivo.h"
 	<iostream>
 	<cstring>
 
-1731283994 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiro.h
+1731534077 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiro.h
 	<string>
 
 1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiroarchivo.h
@@ -245,11 +245,11 @@
 	"PuntoDeRetiroArchivo.h"
 	<iostream>
 
-1731464961 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\sistemagestion.cpp
+1731533842 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\sistemagestion.cpp
 	<iostream>
 	"sistemaGestion.h"
 
-1731464906 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\sistemagestion.h
+1731533745 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\sistemagestion.h
 	"AutoArchivo.h"
 	"ClienteArchivo.h"
 	"FacturaArchivo.h"

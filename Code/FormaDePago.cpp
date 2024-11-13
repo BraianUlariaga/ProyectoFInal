@@ -24,7 +24,17 @@ std::string FormaDePago::getDescripcion() { return _Descripcion; }
 float FormaDePago::getTasaInteres() { return _TasaInteres; }
 bool FormaDePago::getVigente() { return _Vigente; }
 
+
+/*constructor*/
+FormaDePago::FormaDePago() {
+
+	strcpy(_Descripcion, "S/N");
+	_TasaInteres = 999;
+
+}
+
 /*Metodos*/
+
 
 void FormaDePago::CargarFormaDePago() {
 

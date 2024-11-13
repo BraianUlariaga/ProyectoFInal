@@ -21,5 +21,5 @@ public:
     std::string toString();
     void CargarFecha();
     void FechaSistema();
-
+    static int AnioActual();
 };

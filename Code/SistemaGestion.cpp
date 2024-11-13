@@ -405,7 +405,148 @@ void sistemaGestion::bajaVendedor() {
         std::cout << "NO SE ENCONTRO EL REGISTRO." << std::endl;
     }
 
+}
 
+
+int sistemaGestion::Mes_masvendido() {
+
+    int anio = Fecha::AnioActual() , meses[12] = {}, total, mayor, pos;
+    FacturaArchivo archi;
+    DetalleFactura* registroFactura;
+    bool result;
+
+    total = archi.CantidadRegistros();
+
+    registroFactura = new DetalleFactura[total];
+
+    if (registroFactura == nullptr) {
+        return -1;
+    }
+    result = archi.ListarFacturas(registroFactura, total);
+
+    if (result) {
+        for (int X = 0; X < total; X++) {
+            if (registroFactura[X].getFecha().getAnio() == anio) {
+                meses[registroFactura[X].getFecha().getMes() - 1]++;
+            }
+        }
+    }
+    else {
+        return -2;
+    }
+
+    for (int X = 0; X < 12; X++) {
+        if (X == 0) {
+            mayor = meses[X];
+            pos = X + 1;
+        }
+        else {
+            if (mayor < meses[X]) {
+                mayor = meses[X];
+                pos = X + 1;
+            }
+        }
+    }
+    delete[] registroFactura;
+    return pos;
+
+}
+void sistemaGestion::Ventas_anuales() {
+    FacturaArchivo archi;
+    DetalleFactura* registroFactura;
+    int total, anio_actual, cantidad_anios, * vAnios, numero;
+    const int anio_inicio = 2015;
+    Fecha fecha_actual;
+
+    fecha_actual.FechaSistema();
+    anio_actual = fecha_actual.getAnio();
+    cantidad_anios = anio_actual - anio_inicio;
+
+    vAnios = new int[cantidad_anios] {};
+
+    if (vAnios == nullptr) {
+        std::cout << "EXCEDE LA MEMORIA LA CANTIDAD DE ANIOS" << std::endl;
+        return;
+    }
+
+    total = archi.CantidadRegistros();
+
+    registroFactura = new DetalleFactura[total];
+
+    if (registroFactura == nullptr) {
+        std::cout << "EXCEDE LA MEMORIA LA CANTIDAD DE REGISTROS." << std::endl;
+        return;
+    }
+
+    bool result = archi.ListarFacturas(registroFactura, total);
+
+    if (result) {
+        for (int X = 0; X < cantidad_anios; X++) {
+            vAnios[X] = 0;
+        }
+
+        for (int X = 0; X < total; X++) {
+            numero = registroFactura[X].getFecha().getAnio() - anio_inicio;
+            vAnios[numero]++;
+        }
+    }
+    else {
+        std::cout << "NO SE PUDO LEER LOS REGISTROS.." << std::endl;
+    }
+
+    for (int X = 0; X <= cantidad_anios; X++) {
+        std::cout << vAnios[X] << std::endl;
+    }
+
+    delete[] vAnios;
+    delete[] registroFactura;
+}
+
+void sistemaGestion::Ventas_vendedores() {
+    FacturaArchivo archiFactura;
+    VendedorArchivo archiVendedores;
+    int* vVendedores, totalfacturas, totalvendedores, numero;
+    DetalleFactura* registroFactura;
+
+    totalfacturas = archiFactura.CantidadRegistros();
+
+    registroFactura = new DetalleFactura[totalfacturas];
+
+    if (registroFactura == nullptr) {
+        std::cout << "EXCEDE LA MEMORIA DE FACTURAS." << std::endl;
+        return;
+    }
+    bool result = archiFactura.ListarFacturas(registroFactura, totalfacturas);
+    if (result) {
+
+        totalvendedores = archiVendedores.CantidadRegistros();
+
+
+        vVendedores = new int[totalvendedores];
+
+        if (vVendedores == nullptr) {
+            std::cout << "EXCEDE LA MEMORIA DE vendedores." << std::endl;
+            return;
+        }
+
+        for (int X = 0; X < totalvendedores; X++) {
+            vVendedores[X] = 0;
+        }
+
+        for (int X = 0; X < totalfacturas; X++) {
+            numero = registroFactura[X].getIDVendedor();
+            vVendedores[numero - 1]++;
+        }
+
+        for (int X = 0; X < totalvendedores; X++) {
+            std::cout << vVendedores[X] << std::endl;
+        }
+        delete[] registroFactura;
+        delete[] vVendedores;
+    }
+    else {
+        std::cout << "NO SE PUDO ABRIR EL ARCHIVO" << std::endl;
+    }
 
 }
 

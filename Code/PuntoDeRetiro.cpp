@@ -26,7 +26,16 @@ std::string PuntoDeRetiro::getDomicilio() { return _Domicilio; }
 std::string PuntoDeRetiro::getLocalidad() { return _Localidad; }
 bool PuntoDeRetiro::getVigente() { return _Estado; }
 
+/*constructor*/
 
+PuntoDeRetiro::PuntoDeRetiro() {
+
+	strcpy(_Domicilio,"S/N");
+	strcpy(_Localidad,"S/N");
+	_Estado = true;
+
+}
+/*metodos*/
 
 void PuntoDeRetiro::CargarPuntoDeRetiro() {
 	std::string domicilio, localidad;

@@ -17,6 +17,9 @@ public:
 	float getTasaInteres();
 	bool getVigente();
 
+    /*constructor*/
+    FormaDePago();
+
 	/*Metodos*/
 	void CargarFormaDePago();
 	void MostrarFormaDePago();

@@ -22,5 +22,7 @@ public:
     bool generarFactura(Cliente& registroCliente, Vendedor& registroVendedor, Automovil& registroAuto, DetalleFactura& registroFactura);
     void historialFacturas();
     void bajaVendedor();
-
+    void Ventas_anuales();
+    int Mes_masvendido();
+    void Ventas_vendedores();
 };
