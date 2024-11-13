@@ -87,12 +87,12 @@ void sistemaGestion::ejecutarOpcion(int opcion) {
 
 void sistemaGestion::AutosenStock() {
     int total;
-    automovil* registros;
+    Automovil* registros;
     AutoArchivo archi;
 
     total = archi.CantidadRegistros();
 
-    registros = new automovil[total];
+    registros = new Automovil[total];
     if (registros == nullptr) {
         std::cout << "EXCEDE LA MEMORIA." << std::endl;
         return;
@@ -116,7 +116,7 @@ void sistemaGestion::AutosenStock() {
 
 void sistemaGestion::AgregarAutomovil() {
     bool result;
-    automovil registro;
+    Automovil registro;
     AutoArchivo archi;
 
     registro.CargarAuto();
@@ -227,7 +227,7 @@ void sistemaGestion::AgregarVendedor() {
 }
 
 
-bool sistemaGestion::generarFactura(Cliente& registroCliente, Vendedor& registroVendedor, automovil& registroAuto, DetalleFactura& registroFactura) {
+bool sistemaGestion::generarFactura(Cliente& registroCliente, Vendedor& registroVendedor, Automovil& registroAuto, DetalleFactura& registroFactura) {
     FacturaArchivo archiFactura;
     Fecha sistema;
     std::string patente;
@@ -255,7 +255,7 @@ void sistemaGestion::realizarVenta() {
     int dni, posicionCliente = -1, posicionPatente = -1, posVendedor, legajoVendedor, idpago;
     Cliente registroCliente;
     ClienteArchivo archiCliente;
-    automovil registroAuto;
+    Automovil registroAuto;
     DetalleFactura registroFactura;
     AutoArchivo archiAuto;
     Vendedor registroVendedor;

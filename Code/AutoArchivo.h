@@ -7,12 +7,17 @@ private:
 
 public:
     AutoArchivo();
-    bool AgregarAuto(automovil& vehiculo);
-    automovil ListarAuto(int pos);
-    bool ListarAutos(automovil registros[], int cantidad);
+    bool AgregarAuto(Automovil& vehiculo);
+    Automovil ListarAuto(int pos);
+    bool ListarAutos(Automovil registros[], int cantidad);
     int CantidadRegistros();
     int BuscarAuto(char* patente);
-    bool ModificarAuto(automovil& vehiculo, int pos);
-
+    bool ModificarAuto(Automovil& vehiculo, int pos);
+    void BuscarAutosPorMarca();
+    void BuscarAutosPorAnio();
+    void BuscarAutosPorTipo();
+    void BuscarAutosPorKm(int km);
+    void BuscarAutosPorPrecio(double precio);
+    void MarcaMasVendida();
 
 };

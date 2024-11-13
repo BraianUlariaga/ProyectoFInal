@@ -2,7 +2,7 @@
 #include <string>
 
 
-class automovil {
+class Automovil {
 private:
     char _Patente[100];
     char _Color[100];
@@ -15,7 +15,7 @@ private:
 
 public:
     //constructor
-    automovil();
+    Automovil();
     //setters
     void setPatente(std::string patente);
     void setColor(std::string color);

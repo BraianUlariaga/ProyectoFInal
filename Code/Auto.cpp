@@ -6,7 +6,7 @@
 #include "Auto.h"
 
 //constructor
-automovil::automovil() {
+Automovil::Automovil() {
     strcpy(_Patente, "S/P");
     strcpy(_Color, "S/C");
     strcpy(_Marca, "S/M");
@@ -18,7 +18,7 @@ automovil::automovil() {
 
 }
 //setters
-void automovil::setPatente(std::string patente) {
+void Automovil::setPatente(std::string patente) {
 
 
     // Convertir cada carácter a mayúscula
@@ -39,60 +39,60 @@ void automovil::setPatente(std::string patente) {
         }
     }
 }
-void automovil::setColor(std::string color) {
+void Automovil::setColor(std::string color) {
     strcpy(_Color, color.c_str());
 }
-void automovil::setMarca(std::string marca) {
+void Automovil::setMarca(std::string marca) {
     strcpy(_Marca, marca.c_str());
 }
-void automovil::setTipo(std::string tipo) {
+void Automovil::setTipo(std::string tipo) {
     strcpy(_Tipo, tipo.c_str());
 }
-void automovil::setAnio(int anio) {
+void Automovil::setAnio(int anio) {
     if (anio >= 1886) {
         _Anio = anio;
     }
 }
-void automovil::setKm(int km) {
+void Automovil::setKm(int km) {
     if (km >= 0) {
         _Km = km;
     }
 }
-void automovil::setPrecio(float precio) {
+void Automovil::setPrecio(float precio) {
     if (precio >= 0) {
         _Precio = precio;
     }
 }
-void automovil::setEstado(bool estado) {
+void Automovil::setEstado(bool estado) {
     _Estado = estado;
 }
 //getters
-const char* automovil::getPatente()const {
+const char* Automovil::getPatente()const {
     return _Patente;
 }
-const char* automovil::getColor()const {
+const char* Automovil::getColor()const {
     return _Color;
 }
-const char* automovil::getMarca()const {
+const char* Automovil::getMarca()const {
     return _Marca;
 }
-const char* automovil::getTipo()const {
+const char* Automovil::getTipo()const {
     return _Tipo;
 }
-int automovil::getAnio()const {
+int Automovil::getAnio()const {
     return _Anio;
 }
-int automovil::getKm()const {
+int Automovil::getKm()const {
     return _Km;
 }
-float automovil::getPrecio()const {
+float Automovil::getPrecio()const {
     return _Precio;
 }
-bool automovil::getEstado() const {
+bool Automovil::getEstado() const {
     return _Estado;
 }
 //metodos
-void automovil::CargarAuto() {
+void Automovil::CargarAuto() {
     std::string patente, color, marca, tipo;
     int anio, km, precio;
 
@@ -128,7 +128,7 @@ void automovil::CargarAuto() {
 
 
 }
-void automovil::MostrarAuto()const {
+void Automovil::MostrarAuto()const {
     std::cout << "MARCA: " << getMarca() << std::endl;
     std::cout << "PATENTE: " << getPatente() << std::endl;
     std::cout << "TIPO: " << getTipo() << std::endl;
