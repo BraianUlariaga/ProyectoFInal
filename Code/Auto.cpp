@@ -145,7 +145,7 @@ void Automovil::CargarAuto() {
 
     do
     {
-           std::cout << "Ingrese el año: ";
+           std::cout << "Ingrese el anio: ";
            std::cin >> anio;
            if (Validaciones::ValidaPositivo(anio) || Validaciones::ValidarSoloNum(anio)|| anio >= 1990)
            {

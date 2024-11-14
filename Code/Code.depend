@@ -138,7 +138,7 @@
 	<cstring>
 	"VendedorArchivo.h"
 
-1731553079 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\auto.cpp
+1731605291 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\auto.cpp
 	<iostream>
 	<string>
 	<cstring>
@@ -146,7 +146,7 @@
 	"Auto.h"
 	"Validaciones.h"
 
-1731464778 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\auto.h
+1731598377 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\auto.h
 	<string>
 
 1731362548 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\cliente.cpp
@@ -156,91 +156,91 @@
 	"Validaciones.h"
 	<iostream>
 
-1731289480 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\cliente.h
+1731620325 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\cliente.h
 	<string>
 	"Fecha.h"
 	"Persona.h"
 
-1731533956 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\fecha.h
+1731598377 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\fecha.h
 	<string>
 	"Validaciones.h"
 
-1731553157 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\validaciones.h
+1731598378 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\validaciones.h
 	<string>
 
-1731541472 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\persona.h
+1731598377 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\persona.h
 	"Fecha.h"
 
-1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\clientearchivo.h
+1731598377 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\clientearchivo.h
 	"Cliente.h"
 
-1731541517 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\clientearchivo.cpp
+1731598377 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\clientearchivo.cpp
 	"ClienteArchivo.h"
 	"Cliente.h"
 	<iostream>
 
-1731290473 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\detallefactura.cpp
+1731598377 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\detallefactura.cpp
 	<iostream>
 	"DetalleFactura.h"
 	<cstring>
 
-1731290246 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\detallefactura.h
+1731598377 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\detallefactura.h
 	<iostream>
 	"Fecha.h"
 	<string>
 
-1731289057 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\facturaarchivo.cpp
+1731598377 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\facturaarchivo.cpp
 	"facturaArchivo.h"
 
-1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\facturaarchivo.h
+1731598377 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\facturaarchivo.h
 	"DetalleFactura.h"
 
-1731553307 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\fecha.cpp
+1731598377 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\fecha.cpp
 	"Fecha.h"
 	<iostream>
 	<chrono>
 	<ctime>
 
-1731553328 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepago.cpp
+1731598377 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepago.cpp
 	"FormaDePago.h"
 	"Validaciones.h"
 	<iostream>
 	<cstring>
 	"FormaDePagoArchivo.h"
 
-1731534131 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepago.h
+1731598377 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepago.h
 	<string>
 
-1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepagoarchivo.h
+1731598377 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepagoarchivo.h
 	"FormaDePago.h"
 
-1731362213 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepagoarchivo.cpp
+1731598377 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepagoarchivo.cpp
 	"FormaDePagoArchivo.h"
 	<iostream>
 	<cstring>
 
-1731562034 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\main.cpp
+1731602970 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\main.cpp
 	<iostream>
 	"SistemaGestion.h"
 
-1731553351 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\persona.cpp
+1731598377 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\persona.cpp
 	<iostream>
 	"Persona.h"
 	"Validaciones.h"
 	<string>
 	<cstring>
 
-1731553470 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiro.cpp
+1731598377 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiro.cpp
 	"Validaciones.h"
 	"PuntoDeRetiro.h"
 	"PuntoDeRetiroArchivo.h"
 	<iostream>
 	<cstring>
 
-1731534077 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiro.h
+1731598378 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiro.h
 	<string>
 
-1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiroarchivo.h
+1731598378 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiroarchivo.h
 	"PuntoDeRetiro.h"
 
 1731289057 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiroarchivo.cpp
@@ -253,22 +253,22 @@
 	"PuntoDeRetiro.h"
 	"PuntoDeRetiroArchivo.h"
 
-1731562183 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\sistemagestion.h
+1731598378 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\sistemagestion.h
 	"AutoArchivo.h"
 	"ClienteArchivo.h"
 	"FacturaArchivo.h"
 	"VendedorArchivo.h"
 
-1731561616 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\autoarchivo.h
+1731598377 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\autoarchivo.h
 	"Auto.h"
 
-1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\vendedorarchivo.h
+1731598378 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\vendedorarchivo.h
 	"Vendedor.h"
 
-1731561868 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\vendedor.h
+1731598378 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\vendedor.h
 	"Persona.h"
 
-1731553015 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\validaciones.cpp
+1731598378 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\validaciones.cpp
 	"Validaciones.h"
 	<cmath>
 
@@ -277,7 +277,7 @@
 	"Vendedor.h"
 	"VendedorArchivo.h"
 
-1731289057 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\vendedorarchivo.cpp
+1731598378 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\vendedorarchivo.cpp
 	<iostream>
 	<cstring>
 	"VendedorArchivo.h"
@@ -287,4 +287,154 @@
 	<cstring>
 	"AutoArchivo.h"
 	"Validaciones.h"
+
+1731605291 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\auto.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<iomanip>
+	"Auto.h"
+	"Validaciones.h"
+
+1731598377 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\auto.h
+	<string>
+
+1731598378 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\validaciones.h
+	<string>
+
+1731598377 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\autoarchivo.cpp
+	<iostream>
+	<cstring>
+	"AutoArchivo.h"
+	"Validaciones.h"
+
+1731598377 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\autoarchivo.h
+	"Auto.h"
+
+1731598377 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\cliente.cpp
+	"Cliente.h"
+	"ClienteArchivo.h"
+	"Persona.h"
+	"Validaciones.h"
+	<iostream>
+
+1731598377 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\cliente.h
+	<string>
+	"Fecha.h"
+	"Persona.h"
+
+1731598377 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\fecha.h
+	<string>
+	"Validaciones.h"
+
+1731598377 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\persona.h
+	"Fecha.h"
+
+1731598377 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\clientearchivo.h
+	"Cliente.h"
+
+1731598377 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\clientearchivo.cpp
+	"ClienteArchivo.h"
+	"Cliente.h"
+	<iostream>
+
+1731598377 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\detallefactura.cpp
+	<iostream>
+	"DetalleFactura.h"
+	<cstring>
+
+1731598377 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\detallefactura.h
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1731598377 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\facturaarchivo.cpp
+	"facturaArchivo.h"
+
+1731598377 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\facturaarchivo.h
+	"DetalleFactura.h"
+
+1731598377 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\fecha.cpp
+	"Fecha.h"
+	<iostream>
+	<chrono>
+	<ctime>
+
+1731598377 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\formadepago.cpp
+	"FormaDePago.h"
+	"Validaciones.h"
+	<iostream>
+	<cstring>
+	"FormaDePagoArchivo.h"
+
+1731598377 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\formadepago.h
+	<string>
+
+1731598377 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\formadepagoarchivo.h
+	"FormaDePago.h"
+
+1731598377 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\formadepagoarchivo.cpp
+	"FormaDePagoArchivo.h"
+	<iostream>
+	<cstring>
+
+1731602970 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\main.cpp
+	<iostream>
+	"SistemaGestion.h"
+
+1731598378 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\sistemagestion.h
+	"AutoArchivo.h"
+	"ClienteArchivo.h"
+	"FacturaArchivo.h"
+	"VendedorArchivo.h"
+
+1731598378 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\vendedorarchivo.h
+	"Vendedor.h"
+
+1731598378 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\vendedor.h
+	"Persona.h"
+
+1731598377 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\persona.cpp
+	<iostream>
+	"Persona.h"
+	"Validaciones.h"
+	<string>
+	<cstring>
+
+1731598377 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\puntoderetiro.cpp
+	"Validaciones.h"
+	"PuntoDeRetiro.h"
+	"PuntoDeRetiroArchivo.h"
+	<iostream>
+	<cstring>
+
+1731598378 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\puntoderetiro.h
+	<string>
+
+1731598378 c:\users\matib\onedrive\escritorio\proyectofinal-main\code\puntoderetiroarchivo.h
+	"PuntoDeRetiro.h"
+
+1731598378 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\puntoderetiroarchivo.cpp
+	"PuntoDeRetiroArchivo.h"
+	<iostream>
+
+1731614473 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\sistemagestion.cpp
+	<iostream>
+	"sistemaGestion.h"
+	"PuntoDeRetiro.h"
+	"PuntoDeRetiroArchivo.h"
+
+1731598378 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\validaciones.cpp
+	"Validaciones.h"
+	<cmath>
+
+1731608893 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\vendedor.cpp
+	<iostream>
+	"Vendedor.h"
+	"VendedorArchivo.h"
+
+1731598378 source:c:\users\matib\onedrive\escritorio\proyectofinal-main\code\vendedorarchivo.cpp
+	<iostream>
+	<cstring>
+	"VendedorArchivo.h"
 

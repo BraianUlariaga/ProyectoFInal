@@ -36,8 +36,13 @@ Automovil AutoArchivo::ListarAuto(int pos) {
     if (pFILE == nullptr) {
         return vehiculo;
     }
+
+    if (pos >= 0)
+    {
+
     fseek(pFILE, sizeof(Automovil) * pos, 0);
     fread(&vehiculo, sizeof(Automovil), 1, pFILE);
+    }
 
     return vehiculo;
 
@@ -185,7 +190,7 @@ void AutoArchivo::BuscarAutosPorMarca() {
 
 
     delete[] registros;
-
+    delete[] vecMarcas;
 }
 
 
@@ -453,8 +458,16 @@ void AutoArchivo::MarcaMasVendida() {
         }
     }
 
-    std::cout << "Marca mas vendida: " << vecMarcas[marca] << std::endl;
-    std::cout << "Unidades vendidas: " << maxVentas << std::endl;
+    if (maxVentas == 0)
+    {
+        std::cout << "No hay autos vendidos." << std::endl;
+    }
+    else
+    {
+        std::cout << "Marca mas vendida: " << vecMarcas[marca] << std::endl;
+        std::cout << "Unidades vendidas: " << maxVentas << std::endl;
+
+    }
 
     delete[] registros;
     delete[] vecMarcas;

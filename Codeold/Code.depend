@@ -1,0 +1,290 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\main.cpp
+	<iostream>
+
+1731289480 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\auto.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<iomanip>
+	"Auto.h"
+
+1731289480 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\auto.h
+	<string>
+
+1731289480 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\autoarchivo.cpp
+	<iostream>
+	<cstring>
+	"AutoArchivo.h"
+	"Validaciones.h"
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\autoarchivo.h
+	"Auto.h"
+
+1731291097 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\validaciones.h
+	<string>
+
+1731289480 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\clientearchivo.cpp
+	"ClienteArchivo.h"
+	"Cliente.h"
+	<iostream>
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\clientearchivo.h
+	"Cliente.h"
+
+1731289480 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\cliente.h
+	<string>
+	"Fecha.h"
+	"Persona.h"
+
+1731291097 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\fecha.h
+	<string>
+	"Validaciones.h"
+
+1731289480 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\persona.h
+	"Fecha.h"
+
+1731290473 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\detallefactura.cpp
+	<iostream>
+	"DetalleFactura.h"
+	<cstring>
+
+1731290246 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\detallefactura.h
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1731289057 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\facturaarchivo.cpp
+	"facturaArchivo.h"
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\facturaarchivo.h
+	"DetalleFactura.h"
+
+1731291138 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\fecha.cpp
+	"Fecha.h"
+	<iostream>
+	<chrono>
+	<ctime>
+
+1731362213 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\formadepagoarchivo.cpp
+	"FormaDePagoArchivo.h"
+	<iostream>
+	<cstring>
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\formadepagoarchivo.h
+	"FormaDePago.h"
+
+1731283994 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\formadepago.h
+	<string>
+
+1731362299 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\persona.cpp
+	<iostream>
+	"Persona.h"
+	"Validaciones.h"
+	<string>
+	<cstring>
+
+1731289057 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\puntoderetiroarchivo.cpp
+	"PuntoDeRetiroArchivo.h"
+	<iostream>
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\puntoderetiroarchivo.h
+	"PuntoDeRetiro.h"
+
+1731283994 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\puntoderetiro.h
+	<string>
+
+1731290473 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\sistemagestion.cpp
+	<iostream>
+	"sistemaGestion.h"
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\sistemagestion.h
+	"AutoArchivo.h"
+	"ClienteArchivo.h"
+	"FacturaArchivo.h"
+	"VendedorArchivo.h"
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\vendedorarchivo.h
+	"Vendedor.h"
+
+1731289480 c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\vendedor.h
+	"Persona.h"
+
+1731362494 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\formadepago.cpp
+	"FormaDePago.h"
+	"Validaciones.h"
+	<iostream>
+	<cstring>
+	"FormaDePagoArchivo.h"
+
+1731362534 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\validaciones.cpp
+	"Validaciones.h"
+	<cmath>
+
+1731289480 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\vendedor.cpp
+	<iostream>
+	"Vendedor.h"
+	"VendedorArchivo.h"
+
+1731362548 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\cliente.cpp
+	"Cliente.h"
+	"ClienteArchivo.h"
+	"Persona.h"
+	"Validaciones.h"
+	<iostream>
+
+1731289057 source:c:\users\braian\source\repos\programacionii\proyectofinal\mativ1 - copia\code\vendedorarchivo.cpp
+	<iostream>
+	<cstring>
+	"VendedorArchivo.h"
+
+1731553079 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\auto.cpp
+	<iostream>
+	<string>
+	<cstring>
+	<iomanip>
+	"Auto.h"
+	"Validaciones.h"
+
+1731464778 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\auto.h
+	<string>
+
+1731362548 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\cliente.cpp
+	"Cliente.h"
+	"ClienteArchivo.h"
+	"Persona.h"
+	"Validaciones.h"
+	<iostream>
+
+1731289480 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\cliente.h
+	<string>
+	"Fecha.h"
+	"Persona.h"
+
+1731533956 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\fecha.h
+	<string>
+	"Validaciones.h"
+
+1731553157 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\validaciones.h
+	<string>
+
+1731541472 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\persona.h
+	"Fecha.h"
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\clientearchivo.h
+	"Cliente.h"
+
+1731541517 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\clientearchivo.cpp
+	"ClienteArchivo.h"
+	"Cliente.h"
+	<iostream>
+
+1731290473 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\detallefactura.cpp
+	<iostream>
+	"DetalleFactura.h"
+	<cstring>
+
+1731290246 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\detallefactura.h
+	<iostream>
+	"Fecha.h"
+	<string>
+
+1731289057 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\facturaarchivo.cpp
+	"facturaArchivo.h"
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\facturaarchivo.h
+	"DetalleFactura.h"
+
+1731553307 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\fecha.cpp
+	"Fecha.h"
+	<iostream>
+	<chrono>
+	<ctime>
+
+1731553328 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepago.cpp
+	"FormaDePago.h"
+	"Validaciones.h"
+	<iostream>
+	<cstring>
+	"FormaDePagoArchivo.h"
+
+1731534131 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepago.h
+	<string>
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepagoarchivo.h
+	"FormaDePago.h"
+
+1731362213 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\formadepagoarchivo.cpp
+	"FormaDePagoArchivo.h"
+	<iostream>
+	<cstring>
+
+1731562034 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\main.cpp
+	<iostream>
+	"SistemaGestion.h"
+
+1731553351 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\persona.cpp
+	<iostream>
+	"Persona.h"
+	"Validaciones.h"
+	<string>
+	<cstring>
+
+1731553470 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiro.cpp
+	"Validaciones.h"
+	"PuntoDeRetiro.h"
+	"PuntoDeRetiroArchivo.h"
+	<iostream>
+	<cstring>
+
+1731534077 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiro.h
+	<string>
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiroarchivo.h
+	"PuntoDeRetiro.h"
+
+1731289057 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\puntoderetiroarchivo.cpp
+	"PuntoDeRetiroArchivo.h"
+	<iostream>
+
+1731562147 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\sistemagestion.cpp
+	<iostream>
+	"sistemaGestion.h"
+	"PuntoDeRetiro.h"
+	"PuntoDeRetiroArchivo.h"
+
+1731562183 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\sistemagestion.h
+	"AutoArchivo.h"
+	"ClienteArchivo.h"
+	"FacturaArchivo.h"
+	"VendedorArchivo.h"
+
+1731561616 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\autoarchivo.h
+	"Auto.h"
+
+1731289057 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\vendedorarchivo.h
+	"Vendedor.h"
+
+1731561868 c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\vendedor.h
+	"Persona.h"
+
+1731553015 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\validaciones.cpp
+	"Validaciones.h"
+	<cmath>
+
+1731561802 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\vendedor.cpp
+	<iostream>
+	"Vendedor.h"
+	"VendedorArchivo.h"
+
+1731289057 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\vendedorarchivo.cpp
+	<iostream>
+	<cstring>
+	"VendedorArchivo.h"
+
+1731561704 source:c:\users\braian\source\repos\programacionii\proyectofinal\finalcodeblock\proyectofinal\code\autoarchivo.cpp
+	<iostream>
+	<cstring>
+	"AutoArchivo.h"
+	"Validaciones.h"
+

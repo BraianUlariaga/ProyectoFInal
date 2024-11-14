@@ -28,6 +28,7 @@ void sistemaGestion::SubMenu(int opc) {
 		std::cout << "0- SALIR" << std::endl;
 		std::cout << "ELEGIR OPCION: ";
 		std::cin >> opcSubmenu;
+		std::cin.ignore(); //CAMBIO
 		system("pause");
 		system("cls");
 		switch (opcSubmenu)
@@ -37,6 +38,7 @@ void sistemaGestion::SubMenu(int opc) {
 			break;
 		case 2:
 			AutosenStockParaVender();
+			system("pause");
 			break;
 		case 3:
 			AgregarAutomovil();
@@ -58,12 +60,14 @@ void sistemaGestion::SubMenu(int opc) {
 		std::cout << "0- SALIR" << std::endl;
 		std::cout << "ELEGIR OPCION: ";
 		std::cin >> opcSubmenu;
+		std::cin.ignore(); //CAMBIO
 		system("pause");
 		system("cls");
 		switch (opcSubmenu)
 		{
 		case 1:
 			vendedores_activos();
+			system("pause");
 			break;
 		case 2:
 			AgregarVendedor();
@@ -73,6 +77,7 @@ void sistemaGestion::SubMenu(int opc) {
 			break;
 		case 4:
 			historial_vendedores();
+			system("pause");
 			break;
 		case 0:
 			MenuPrincipal();
@@ -94,6 +99,7 @@ void sistemaGestion::SubMenu(int opc) {
 		{
 		case 1:
 			historial_clientes();
+			system("pause");
 			break;
 		case 0:
 			MenuPrincipal();
@@ -116,9 +122,11 @@ void sistemaGestion::SubMenu(int opc) {
 		{
 		case 1:
 			realizarVenta();
+			system("pause");
 			break;
 		case 2:
 			historialFacturas();
+			system("pause");
 			break;
 		case 0:
 			MenuPrincipal();
@@ -158,6 +166,7 @@ void sistemaGestion::SubMenu(int opc) {
 		}
 		break;
 	case 6:
+	     int mes;
 		std::cout << "--------SUB MENU--------" << std::endl << std::endl;
 		std::cout << "1- Mes con mas ventas del anio actual" << std::endl;
 		std::cout << "2- Ventas anulaes." << std::endl;
@@ -171,16 +180,21 @@ void sistemaGestion::SubMenu(int opc) {
 		switch (opcSubmenu)
 		{
 		case 1:
-			Mes_masvendido();
+            mes = Mes_masvendido();
+			std::cout<< mes <<std::endl;
+			system("pause");
 			break;
 		case 2:
 			Ventas_anuales();
+			system("pause");
 			break;
 		case 3:
 			Ventas_vendedores();
+			system("pause");
 			break;
 		case 4:
 			AutoArchivo::MarcaMasVendida();
+			system("pause");
 			break;
 		case 0:
 			MenuPrincipal();
@@ -248,12 +262,12 @@ void sistemaGestion::gestionarOpciones() {
 		system("cls");
 
 		SubMenu(opcion);
-		system("pause");
 		system("cls");
 
-	} while (opcion != 0);
+	}while (opcion != 0);
 
 }
+
 
 void sistemaGestion::AutosenStockParaVender() {
 	int total;
@@ -368,42 +382,51 @@ void sistemaGestion::ModificarVendedor() {
 		std::cin >> legajo;
 		system("cls");
 		pos = archi.BuscarVendedor(legajo);
+
 	}
-	if (opc == 1)
+	if (pos >= 0)
 	{
-		registroVendedor = archi.ListarVendedor(pos);
 
-		std::cout << "Datos a modificar: " << std::endl;
-		registroVendedor.MostrarVendedor();
-
-		system("pause");
-		std::cout << "      Presione una tecla para continuar..." << std::endl;
-		system("cls"); // Limpia la pantalla antes de mostrar el menú nuevamente
-
-		std::cout << "MODIFICAR: " << std::endl;
-
-		registroVendedor.ModificarVendedor();
-
-		if (archi.ModificarVendedor(registroVendedor, pos))
+		if (opc == 1)
 		{
+			registroVendedor = archi.ListarVendedor(pos);
+
+			std::cout << "Datos a modificar: " << std::endl;
+			registroVendedor.MostrarVendedor();
+
+			system("pause");
+			std::cout << "      Presione una tecla para continuar..." << std::endl;
+			system("cls"); // Limpia la pantalla antes de mostrar el menú nuevamente
+
+			std::cout << "MODIFICAR: " << std::endl;
+
+			registroVendedor.ModificarVendedor();
+
+			if (archi.ModificarVendedor(registroVendedor, pos))
+			{
+				std::cout << "Modificacion exitosa " << std::endl;
+			}
+			else
+			{
+				std::cout << "ERROR al guardar la modificacion." << std::endl;
+			}
+
+		}
+		else if (opc == 2)
+		{
+			registroVendedor = archi.ListarVendedor(pos);
+			system("pause");
+			std::cout << "      Presione una tecla para continuar..." << std::endl;
+			system("cls");
+			registroVendedor.BajaVendedor();
+			archi.ModificarVendedor(registroVendedor, pos);
+			registroVendedor.MostrarVendedor();
 			std::cout << "Modificacion exitosa " << std::endl;
 		}
-		else
-		{
-			std::cout << "ERROR al guardar la modificacion." << std::endl;
-		}
-
 	}
-	else if (opc == 2)
+	else
 	{
-		registroVendedor = archi.ListarVendedor(pos);
-		system("pause");
-		std::cout << "      Presione una tecla para continuar..." << std::endl;
-		system("cls");
-		registroVendedor.BajaVendedor();
-		archi.ModificarVendedor(registroVendedor, pos);
-		registroVendedor.MostrarVendedor();
-		std::cout << "Modificacion exitosa " << std::endl;
+		std::cout << "El legajo no existe." <<:: std::endl;
 	}
 }
 
@@ -520,7 +543,7 @@ void sistemaGestion::realizarVenta() {
 						registroFactura.setIDPago(idpago);
 						std::cout << "LEGAJO DEL VENDEDOR: ";
 						std::cin >> legajoVendedor;
-						posVendedor = archiVendedor.BuscarVendedor(legajoVendedor);
+						posVendedor = archiVendedor.BuscarVendedor(legajoVendedor); //busca el vendedor y posiciona para buscar en el archivo.
 						if (posVendedor >= 0) {
 							registroVendedor = archiVendedor.ListarVendedor(posVendedor);
 							if (archiCliente.BuscarCliente(dni) < 0) {
@@ -529,7 +552,7 @@ void sistemaGestion::realizarVenta() {
 							registroAuto.setEstado(false);
 							archiAuto.ModificarAuto(registroAuto, posicionPatente);
 							result = generarFactura(registroCliente, registroVendedor, registroAuto, registroFactura);
-							if (result) {
+							if (result){
 								//exitoso = archiCliente.agregarRegistro(registroCliente); hacer logica para ver si existe, sino no lo puedo agregar.
 								std::cout << "Venta realizada con exito.";
 							}

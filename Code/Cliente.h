@@ -17,6 +17,7 @@ public:
 	/*Funciones*/
 	void CargarCliente();
 	void MostrarCliente();
+    void ModificarCliente();
 
 private:
 	int _IdCliente;

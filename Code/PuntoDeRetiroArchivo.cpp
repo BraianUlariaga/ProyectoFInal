@@ -107,7 +107,7 @@ int PuntoDeRetiroArchivo::BuscarPuntoDeRetiro(int id) {
         if (puntoDeRetiro.getIdPuntoRetiro() == id) {
            fclose(pFile);
            return pos;
-        
+
         }
         pos++;
     }
@@ -157,7 +157,7 @@ void PuntoDeRetiroArchivo::ModificarPuntoDeRetiro(int id) {
             std::cout << "MODIFICAR: " << std::endl;
 
             puntoDeRetiro.ModificarPuntoDeRetiro();
-        
+
             if ( arch.GuardarModificacion(puntoDeRetiro,pos) )
             {
                 std::cout << "Modificacion exitosa " << std::endl;
@@ -174,7 +174,7 @@ void PuntoDeRetiroArchivo::ModificarPuntoDeRetiro(int id) {
             arch.GuardarModificacion(puntoDeRetiro, pos);
             puntoDeRetiro.MostrarPuntoDeRetiro();
         }
-        
+
     }
     else {
         std::cout << "El producto no se encuentra en el sistema." << std::endl;

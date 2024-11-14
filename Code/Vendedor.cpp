@@ -22,16 +22,19 @@ bool Vendedor::getEstado()const{
     return _Estado;
 }
 //metodos
-void Vendedor::CargarVendedor(){
 
+void Vendedor::CargarVendedor(){
     VendedorArchivo archi;
     int legajo;
     Persona::CargarPersona();
-    std::cout<< "LEGAJO: ";
-    std::cin>> legajo;
+    /*std::cout<< "LEGAJO: ";
+    std::cin>> legajo;*/
+    legajo = archi.CantidadRegistros() +1;
     setLegajo(legajo);
 
     setEstado(true);
+
+//cambio el cargar desde aca porque si lo hacia desde la clase la clase en si me pedia que borre los #include y encima creo que iba a ser un poco engorroso
 }
 
 void Vendedor::BajaVendedor() {
@@ -43,6 +46,7 @@ void Vendedor::BajaVendedor() {
 void Vendedor::ModificarVendedor() {
 
     Persona::CargarPersona();
+    setEstado(true); //CAMBIO
 
 }
 void Vendedor::MostrarVendedor(){

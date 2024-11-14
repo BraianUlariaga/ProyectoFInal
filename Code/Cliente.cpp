@@ -23,6 +23,11 @@ void Cliente::CargarCliente() {
 	Persona::CargarPersona();
 
 }
+void Cliente::ModificarCliente() {
+
+	Persona::CargarPersona();
+
+}
 
 void Cliente::MostrarCliente()	{
 

@@ -6,5 +6,7 @@ int main()
     sistemaGestion sistema;
 
     sistema.gestionarOpciones();
+
+
     return 0;
 }
