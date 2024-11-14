@@ -68,6 +68,8 @@ std::string Fecha::toString(){
 }
 
 void Fecha::CargarFecha(){
+    do
+    {
     int dia, mes, anio;
     std::cout<< "dia: ";
     std::cin>> dia;
@@ -75,14 +77,19 @@ void Fecha::CargarFecha(){
     std::cout<< "mes: ";
     std::cin>> mes;
 
-    std::cout<< "anio: ";
+    std::cout<< "año: ";
     std::cin>> anio;
 
-    if(ValidarFecha(dia, mes, anio)){
-        setDia(dia);
-        setMes(mes);
-        setAnio(anio);
-    }
+        if(ValidarFecha(dia, mes, anio)){
+            setDia(dia);
+            setMes(mes);
+            setAnio(anio);
+            break;
+        }
+        std::cout << "Fecha mal ingresada ";
+        system("pause");
+        system("cls");
+    } while (true);
 }
 
 void Fecha::FechaSistema() {

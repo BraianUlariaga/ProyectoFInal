@@ -3,13 +3,13 @@
 
 class Persona{
 private:
-    char _Nombre[30];        //std::string _nombre;
-    char _Apellido[30];      //std::string _apellido;
+    char _Nombre[100];        //std::string _nombre;
+    char _Apellido[100];      //std::string _apellido;
     int _DNI;
     Fecha _FechaNacimiento;
-    char _Telefono[20]; //std::string _telefono;
-    char _Email[50];    //std::string _email;
-    
+    char _Telefono[13]; //std::string _telefono;
+    char _Email[100];    //std::string _email;
+
 public:
     //constructor
     Persona();

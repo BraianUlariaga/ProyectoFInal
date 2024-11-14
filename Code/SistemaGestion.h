@@ -7,12 +7,13 @@
 
 class sistemaGestion {
 private:
-    void mostrarMenu();
-    void ejecutarOpcion(int opcion);
+    void MenuPrincipal();
+    void SubMenu(int opc);
+    void MenuBusquedaAuto();
 
 public:
     void gestionarOpciones();
-    void AutosenStock();
+    void AutosenStockParaVender();
     void AgregarAutomovil();
     void realizarVenta();
     void historial_clientes();
@@ -21,7 +22,10 @@ public:
     void AgregarVendedor();
     bool generarFactura(Cliente& registroCliente, Vendedor& registroVendedor, Automovil& registroAuto, DetalleFactura& registroFactura);
     void historialFacturas();
-    void bajaVendedor();
+    void ModificarVendedor();
+    void AgregarPuntoDeRetiro();
+    void ListarPuntosDeRetiros();
+    void ModificarPuntoDeRetiro();
     void Ventas_anuales();
     int Mes_masvendido();
     void Ventas_vendedores();

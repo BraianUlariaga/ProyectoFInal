@@ -159,13 +159,16 @@ void AutoArchivo::BuscarAutosPorMarca() {
             cont++;
         }
     }
-    std::cout << "Seleccione una marca a buscar:" << std::endl;
+    std::cout << "Marcas disponibles :" << std::endl;
     for (int x = 0; x < cont; ++x) {
         std::cout << x + 1 << " - " << vecMarcas[x] << std::endl;
     }
 
     int opc;
+    std::cout << "Seleccione una marca a buscar:";
     std::cin >> opc;
+    system("pause");
+    system("cls");
     if (opc < 1 || opc > cont) {
         std::cout << "Opción incorrecta." << std::endl;
         delete[] registros;
@@ -219,13 +222,15 @@ void AutoArchivo::BuscarAutosPorAnio() {
             cont++;
         }
     }
-    std::cout << "Seleccione el año a buscar:" << std::endl;
+    std::cout << "Registro de los anios disponibles en stock." << std::endl;
     for (int x = 0; x < cont; ++x) {
         std::cout << x + 1 << " - " << vecAnio[x] << std::endl;
     }
 
+    std::cout << "Seleccione una opcion." << std::endl;
     int opc;
     std::cin >> opc;
+
 
     if (opc < 1 || opc > cont) {
         std::cout << "Opcion incorrecta." << std::endl;
@@ -281,12 +286,13 @@ void AutoArchivo::BuscarAutosPorTipo() {
         }
     }
 
-    std::cout << "Seleccione el tipo de auto a buscar: " << std::endl ;
+    std::cout << "Tipos de autos disponibles: " << std::endl ;
         for (int x = 0; x < cont; x++)
         {
             std::cout << x + 1 << " - " << vecTipo[x] << std::endl;
         }
         int opc;
+        std::cout << "Seleccione una opcion: " << std::endl ;
         std::cin >> opc;
 
             if (opc <1 || opc > cont)
@@ -311,7 +317,7 @@ void AutoArchivo::BuscarAutosPorTipo() {
 
 }
 
-void AutoArchivo::BuscarAutosPorKm(int km) {
+void AutoArchivo::BuscarAutosPorKm() {
     int total;
     Automovil* registros;
     AutoArchivo archi;
@@ -326,6 +332,12 @@ void AutoArchivo::BuscarAutosPorKm(int km) {
 
     bool result = archi.ListarAutos(registros, total);
 
+    std::cout << "Ingrese los kilometros minimos a buscar." << std::endl;
+    int km;
+    std::cin >> km;
+
+    if (Validaciones::ValidaPositivo(km))
+    {
         bool encontrado = false;
         for (int i = 0; i < total; ++i) {
             if (registros[i].getKm() >= km) {
@@ -336,11 +348,16 @@ void AutoArchivo::BuscarAutosPorKm(int km) {
         if (!encontrado) {
             std::cout << "No se tenemos disponibles autos con mas de " << km << " kilometros." << std::endl;
         }
+    }
+    else
+    {
+        std::cout << "El dato no es positivo" << std::endl;
+    }
 
 
     delete[] registros;
 }
-void AutoArchivo::BuscarAutosPorPrecio(double precio) {
+void AutoArchivo::BuscarAutosPorPrecio() {
     int total;
     Automovil* registros;
     AutoArchivo archi;
@@ -354,6 +371,12 @@ void AutoArchivo::BuscarAutosPorPrecio(double precio) {
     }
 
     bool result = archi.ListarAutos(registros, total);
+
+
+    std::cout << "Ingrese el precio minimos a buscar." << std::endl;
+    double precio;
+    std::cin >> precio;
+    std::cout <<std::endl;
 
         bool encontrado = false;
         for (int i = 0; i < total; ++i) {

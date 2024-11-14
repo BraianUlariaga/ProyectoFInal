@@ -4,7 +4,7 @@
 #include <iostream>
 
 ClienteArchivo::ClienteArchivo() {
-    _NombreArchivo = "Cliente.dat";
+    _NombreArchivo = "clientes.dat";
 }
 
 bool ClienteArchivo::AgregarCliente(Cliente cliente) {

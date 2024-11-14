@@ -32,7 +32,17 @@ void Vendedor::CargarVendedor(){
     setLegajo(legajo);
 
     setEstado(true);
+}
 
+void Vendedor::BajaVendedor() {
+
+    setEstado(false);
+
+}
+
+void Vendedor::ModificarVendedor() {
+
+    Persona::CargarPersona();
 
 }
 void Vendedor::MostrarVendedor(){

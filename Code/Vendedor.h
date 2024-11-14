@@ -18,6 +18,8 @@ public:
     //metodos
     void CargarVendedor();
     void MostrarVendedor();
+    void ModificarVendedor();
+    void BajaVendedor();
 
 
 };

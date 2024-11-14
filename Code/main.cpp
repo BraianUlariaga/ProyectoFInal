@@ -1,9 +1,10 @@
 #include <iostream>
-
-using namespace std;
+#include "SistemaGestion.h"
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    sistemaGestion sistema;
+
+    sistema.gestionarOpciones();
     return 0;
 }

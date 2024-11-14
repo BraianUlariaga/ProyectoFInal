@@ -44,6 +44,8 @@ void FormaDePago::CargarFormaDePago() {
 	std::string descripcion;
 	float interes;
 	bool vigente;
+	do
+	{
 
 	std::cout << "Ingrese la descripcion del medio de pago." << std::endl;
 	std::cin.ignore();
@@ -55,20 +57,32 @@ void FormaDePago::CargarFormaDePago() {
 	}
 	else
 	{
-
 		setDescripcion(descripcion);
+		break;
+
 	}
+	system("pause");
+	system("cls");
+	} while (true);
+
+	do
+	{
 
 	std::cout << "Ingrese la tasa de interes del medio de pago." << std::endl;
 	std::cin >> interes;
 	if (Validaciones::ValidaPositivo(interes))
 	{
-		std::cout << "La tasa de interes no puede ser menor a 0." << std::endl;
+		setTasaInteres(interes);
+		break;
 	}
 	else
 	{
-		setTasaInteres(interes);
+		std::cout << "La tasa de interes no puede ser menor a 0." << std::endl;
+
 	}
+	system("pause");
+	system("cls");
+	} while (true);
 
 	setVigente(true);
 
@@ -97,6 +111,9 @@ void FormaDePago::ModificarFormaDePago() {
 	float interes;
 	bool vigente;
 
+	do
+	{
+
 	std::cout << "Ingrese la descripcion del medio de pago." << std::endl;
 	std::cin.ignore();
 	std::getline(std::cin, descripcion);
@@ -109,18 +126,31 @@ void FormaDePago::ModificarFormaDePago() {
 	{
 
 		setDescripcion(descripcion);
+		break;
 	}
+	system("pause");
+	system("cls");
+
+	} while (true);
+
+	do
+	{
 
 	std::cout << "Ingrese la tasa de interes del medio de pago." << std::endl;
 	std::cin >> interes;
 	if (Validaciones::ValidaPositivo(interes))
 	{
-		std::cout << "La tasa de interes no puede ser menor a 0." << std::endl;
+
+		setTasaInteres(interes);
+		break;
 	}
 	else
 	{
-		setTasaInteres(interes);
+		std::cout << "La tasa de interes no puede ser menor a 0." << std::endl;
 	}
+	system("pause");
+	system("cls");
+	} while (true);
 
 	setVigente(true);
 

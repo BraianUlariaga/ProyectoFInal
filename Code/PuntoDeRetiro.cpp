@@ -36,7 +36,6 @@ PuntoDeRetiro::PuntoDeRetiro() {
 
 }
 /*metodos*/
-
 void PuntoDeRetiro::CargarPuntoDeRetiro() {
 	std::string domicilio, localidad;
 	bool vigente;
@@ -46,6 +45,8 @@ void PuntoDeRetiro::CargarPuntoDeRetiro() {
 
 	// Limpia el buffer de entrada para evitar problemas con getline()
 	//std::cin.ignore();
+	do
+	{
 
 	std::cout << "Ingrese calle y altura del punto de retiro." << std::endl;
 
@@ -59,6 +60,12 @@ void PuntoDeRetiro::CargarPuntoDeRetiro() {
 	{
 		setDomicilio(domicilio);
 	}
+	system("pause");
+	system("cls");
+	} while (true);
+
+	do
+	{
 
 	std::cout << "Ingrese la localidad del punto de retiro." << std::endl;
 	getline(std::cin, localidad);
@@ -71,7 +78,9 @@ void PuntoDeRetiro::CargarPuntoDeRetiro() {
 	{
 		setLocalidad(localidad);
 	}
-
+	system("pause");
+	system("cls");
+	} while (true);
 	setVigente(true);
 }
 void PuntoDeRetiro::MostrarPuntoDeRetiro() {
@@ -91,23 +100,33 @@ void PuntoDeRetiro::BajaPuntoDeRetiro() {
 
 void PuntoDeRetiro::ModificarPuntoDeRetiro() {
 	std::string domicilio, localidad;
-	bool vigente;
 
 	// Limpia el buffer de entrada para evitar problemas con getline()
 	//std::cin.ignore();
 
+	do
+	{
 	std::cout << "Ingrese calle y altura del punto de retiro." << std::endl;
 
 	getline(std::cin, domicilio);
 
-	if (Validaciones::ValidarStringVacio(domicilio))
+	if (!Validaciones::ValidarStringVacio(domicilio))
 	{
 		std::cout << "El domicilio no puede estar vacio." << std::endl;
 	}
 	else
 	{
 		setDomicilio(domicilio);
+		break;
+
 	}
+	system("pause");
+	system("cls");
+
+	} while (true);
+
+	do
+	{
 
 	std::cout << "Ingrese la localidad del punto de retiro." << std::endl;
 	getline(std::cin, localidad);
@@ -119,7 +138,11 @@ void PuntoDeRetiro::ModificarPuntoDeRetiro() {
 	else
 	{
 		setLocalidad(localidad);
+		break;
 	}
+	system("pause");
+	system("cls");
+	} while (true);
 
 	setVigente(true);
 }

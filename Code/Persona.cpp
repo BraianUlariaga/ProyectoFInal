@@ -17,13 +17,13 @@ Persona::Persona() {
 }
 //setters
 void Persona::setNombre(std::string nombre) {
-	if (nombre.length() < 30)
+	if (nombre.length() < 100)
 	{
 		strcpy(_Nombre, nombre.c_str());
 	}
 }
 void Persona::setApellido(std::string apellido) {
-	if (apellido.length() < 30)
+	if (apellido.length() < 100)
 	{
 		strcpy(_Apellido, apellido.c_str());
 	}
@@ -35,13 +35,13 @@ void Persona::setFechaNacimiento(Fecha nacimiento) {
 	_FechaNacimiento = nacimiento;
 }
 void Persona::setTelefono(std::string telefono) {
-	if (telefono.length() < 20)
+	if (telefono.length() < 13)
 	{
 		strcpy(_Telefono, telefono.c_str());
 	}
 }
 void Persona::setEmail(std::string email) {
-	if (email.length() < 50)
+	if (email.length() < 100)
 	{
 		strcpy(_Email, email.c_str());
 	}
@@ -66,85 +66,115 @@ std::string Persona::getEmail()const {
 	return _Email;
 }
 //metodos
+//metodos
 void Persona::CargarPersona() {
 	std::string nombre, apellido, telefono, email;
 	int dni;
 	Fecha nacimiento;
 
-	std::cout << "NOMBRE: ";
-	getline(std::cin, nombre);
-	if (Validaciones::ValidarStringVacio(nombre)) // valido que el nombre no este vacio
+	do
 	{
-		std::cout << "El nombre no puede estar vacio." << std::endl;
-	}
-	else
-	{
-		setNombre(nombre);
-	}
 
-	std::cout << "APELLIDO: ";
-	getline(std::cin, apellido);
-	if (Validaciones::ValidarStringVacio(apellido)) // valido que el nombre no este vacio
-	{
-		std::cout << "El apellido no puede estar vacio." << std::endl;
-	}
-	else
-	{
-		setApellido(apellido);
-
-	}
-
-	std::cout << "DNI: ";
-	std::cin >> dni;
-	if (Validaciones::ValidaPositivo(dni))// valido que el DNI no sea negativo
-	{
-		std::cout << "El numero no puede ser negativo." << std::endl;
-	}
-	else
-	{
-		if (Validaciones::ValidaLongitudNumMayorA6(dni)) // valido que el dni tenga mas de 6 digitos
+		std::cout << "Ingrese el nombre: ";
+		getline(std::cin, nombre);
+		if (!Validaciones::ValidarStringVacio(nombre) || Validaciones::ValidarLetras(nombre)) // valido que el nombre no este vacio
 		{
-			std::cout << "El DNI debe tener 6 digitos." << std::endl;
+			setNombre(nombre);
+			break;
 		}
 		else
 		{
-			setDNI(dni);
-			std::cout << "DNI ingresado correctamente." << std::endl;
+			std::cout << "El nombre no puede estar vacio y debe contener solo letras." << std::endl;
 		}
-	}
+		system("pause");
+		system("cls");
+	} while (true);
+
+	do
+	{
+
+		std::cout << "ingrese el apellido: ";
+		getline(std::cin, apellido);
+		if (!Validaciones::ValidarStringVacio(apellido) || Validaciones::ValidarLetras(apellido)) // valido que el nombre no este vacio
+		{
+			setApellido(apellido);
+			break;
+		}
+		else
+		{
+			std::cout << "El apellido no puede estar vacio." << std::endl;
+		}
+		system("pause");
+		system("cls");
+	} while (true);
+
+	do
+	{
+
+		std::cout << "Ingres ele DNI: ";
+		std::cin >> dni;
+		if (!Validaciones::ValidaPositivo(dni))// valido que el DNI sea negativo
+		{
+			std::cout << "El numero no puede ser negativo." << std::endl;
+		}
+		else
+		{
+			if (Validaciones::ValidaLongitudNumMayorA6(dni)) // valido que el dni tenga mas de 6 digitos
+			{
+				std::cout << "El DNI debe tener 6 digitos." << std::endl;
+			}
+			else
+			{
+				setDNI(dni);
+				break;
+			}
+		}
+		system("pause");
+		system("cls");
+	} while (true);
 
 
-	std::cout << "FECHA DE NACIMIENTO: ";
+	std::cout << " Ingrese la fecha de nacimiento: ";
 	nacimiento.CargarFecha();
 	setFechaNacimiento(nacimiento);
 	std::cin.ignore();
 
-	std::cout << "TELEFONO: ";
-	getline(std::cin, telefono);
-	if (Validaciones::ValidarStringVacio(telefono))
+	do
 	{
-		std::cout << "El telefono no puede estar vacio." << std::endl;
-	}
-	else if (telefono.size()>=8)
-	{
-		setTelefono(telefono);
-	}
-	else
-	{
-		std::cout << "El telefono tiene menos de 8 caracteres." << std::endl;
-	}
+
+		std::cout << "Ingrese el telefono: ";
+		getline(std::cin, telefono);
+		if (!Validaciones::ValidarStringVacio(telefono) || telefono.size() >= 8)
+		{
+			setTelefono(telefono);
+			break;
+		}
+		else
+		{
+			std::cout << "El telefono no puede estar vacio y debe tener al menos 8 digitos." << std::endl;
+		}
+		system("pause");
+		system("cls");
+	} while (true);
 
 
-	std::cout << "EMAIL: ";
-	getline(std::cin, email);
-	if (Validaciones::ValidarMail(email)) {
-
-		setEmail(email);
-	}
-	else
+	do
 	{
-		std::cout << "Mail invalido" << std::endl;
-	}
+
+		std::cout << "Ingrese el email: ";
+		getline(std::cin, email);
+		if (Validaciones::ValidarMail(email)) {
+
+			setEmail(email);
+			break;
+		}
+		else
+		{
+			std::cout << "Mail invalido" << std::endl;
+		}
+		system("pause");
+		system("cls");
+	} while (true);
 }
 void Persona::MostrarPersona()const {
 	std::cout << "NOMBRE: " << getNombre() << std::endl;

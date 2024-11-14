@@ -4,6 +4,7 @@
 #include <cstring>
 #include <iomanip>
 #include "Auto.h"
+#include "Validaciones.h"
 
 //constructor
 Automovil::Automovil() {
@@ -19,49 +20,25 @@ Automovil::Automovil() {
 }
 //setters
 void Automovil::setPatente(std::string patente) {
-
-
-    // Convertir cada carácter a mayúscula
-    for (int i = 0; i < patente.size(); i++) {
-        patente[i] = toupper(patente[i]);
-    }
-
-    if (patente.size() == 6) {
-        if (isalpha(patente[0]) && isalpha(patente[1]) && isalpha(patente[2]) && isdigit(patente[3]) && isdigit(patente[4]) && isdigit(patente[5])) {
-            strcpy(_Patente, patente.c_str());
-        }
-    }
-    else {
-        if (patente.size() == 7) {
-            if (isalpha(patente[0]) && isalpha(patente[1]) && isdigit(patente[2]) && isdigit(patente[3]) && isdigit(patente[4]) && isalpha(patente[5]) && isalpha(patente[6])) {
-                strcpy(_Patente, patente.c_str());
-            }
-        }
-    }
+        strcpy(_Patente, patente.c_str());
 }
 void Automovil::setColor(std::string color) {
-    strcpy(_Color, color.c_str());
+        strcpy(_Color, color.c_str());
 }
 void Automovil::setMarca(std::string marca) {
-    strcpy(_Marca, marca.c_str());
+       strcpy(_Marca, marca.c_str());
 }
 void Automovil::setTipo(std::string tipo) {
-    strcpy(_Tipo, tipo.c_str());
+       strcpy(_Tipo, tipo.c_str());
 }
 void Automovil::setAnio(int anio) {
-    if (anio >= 1886) {
         _Anio = anio;
-    }
 }
 void Automovil::setKm(int km) {
-    if (km >= 0) {
         _Km = km;
-    }
 }
 void Automovil::setPrecio(float precio) {
-    if (precio >= 0) {
         _Precio = precio;
-    }
 }
 void Automovil::setEstado(bool estado) {
     _Estado = estado;
@@ -96,40 +73,140 @@ void Automovil::CargarAuto() {
     std::string patente, color, marca, tipo;
     int anio, km, precio;
 
-    std::cout << "PATENTE: ";
-    getline(std::cin, patente);
-    setPatente(patente);
+    do
+    {
+        std::cout << "Ingrese la patente: ";
+        getline(std::cin, patente);
+        if (Validaciones::ValidaPatente(patente))
+        {
+            setPatente(patente);
+            break;
+        }
+        else
+        {
+            std::cout << "Patente no valida. " << std::endl;
+        }
+        system("pause");
+        system("cls");
+    } while (true);
 
-    std::cout << "MARCA: ";
-    getline(std::cin, marca);
-    setMarca(marca);
 
-    std::cout << "TIPO: ";
-    getline(std::cin, tipo);
-    setTipo(tipo);
+    do
+    {
+         std::cout << "Ingrese la marca: ";
+         getline(std::cin, marca);
+        if (!Validaciones::ValidarStringVacio(marca) || Validaciones::ValidarLetras(marca))
+        {
+            setMarca(marca);
+            break;
+        }
+        else
+        {
+            std::cout << "El dato no puede estar vacio o contiene nuemeros" << std::endl;
+        }
+        system("pause");
+        system("cls");
+    } while (true);
 
-    std::cout << "COLOR: ";
-    getline(std::cin, color);
-    setColor(color);
+    do
+    {
+        std::cout << "Ingrese el tipo de vehiculo: ";
+        getline(std::cin, tipo);
+        if (!Validaciones::ValidarStringVacio(tipo) || Validaciones::ValidarLetras(tipo))
+        {
+            setTipo(tipo);
+            break;
+        }
+        else
+        {
+            std::cout << "El dato no puede estar vacio o contiene nuemeros" << std::endl;
+        }
+        system("pause");
+        system("cls");
+    } while (true);
 
-    std::cout << "ANIO: ";
-    std::cin >> anio;
-    setAnio(anio);
 
-    std::cout << "KILOMETROS: ";
-    std::cin >> km;
-    setKm(km);
+    do
+    {
+        std::cout << "Ingrese el Color: ";
+        getline(std::cin, color);
+        if (!Validaciones::ValidarStringVacio(color) || Validaciones::ValidarLetras(color))
+        {
+            setColor(color);
+            break;
+        }
+        else
+        {
+            std::cout << "El dato no puede estar vacio o contiene nuemeros" << std::endl;
+        }
+        system("pause");
+        system("cls");
+    } while (true);
 
-    std::cout << "PRECIO: ";
-    std::cin >> precio;
-    setPrecio(precio);
+    do
+    {
+           std::cout << "Ingrese el año: ";
+           std::cin >> anio;
+           if (Validaciones::ValidaPositivo(anio) || Validaciones::ValidarSoloNum(anio)|| anio >= 1990)
+           {
+            setAnio(anio);
+            break;
+           }
+           else
+           {
+               std::cout << "El dato no deber ser numerico, positivo y mayor a 1990" << std::endl;
+           }
+           system("pause");
+           system("cls");
+    } while (true);
+
+    do
+    {
+        std::cout << "Ingrese los kilometros: ";
+        std::cin >> km;
+        if (Validaciones::ValidaPositivo(km) || Validaciones::ValidarSoloNum(km))
+        {
+            setKm(km);
+            break;
+        }
+        else
+        {
+            std::cout << "El dato no deber ser numerico y positivo " << std::endl;
+        }
+        system("pause");
+        system("cls");
+
+
+    } while (true);
+
+    do
+    {
+        std::cout << "Ingrese el precio: ";
+        std::cin >> precio;
+        if (Validaciones::ValidaPositivo(precio) || Validaciones::ValidarSoloNum(precio))
+        {
+            setPrecio(precio);
+            break;
+        }
+        else
+        {
+            std::cout << "El dato no deber ser numerico y positivo " << std::endl;
+        }
+        system("pause");
+        system("cls");
+
+
+    } while (true);
+
 
     setEstado(true);
 
 
 }
 void Automovil::MostrarAuto()const {
+    std::cout << std::setw(25) << std::setfill('-') << "-" << std::endl;
     std::cout << "MARCA: " << getMarca() << std::endl;
+    std::cout << std::setw(std::string(getMarca()).length() + 10) << std::setfill('-') << "-" << std::endl;
     std::cout << "PATENTE: " << getPatente() << std::endl;
     std::cout << "TIPO: " << getTipo() << std::endl;
     std::cout << "COLOR: " << getColor() << std::endl;
@@ -139,7 +216,8 @@ void Automovil::MostrarAuto()const {
     std::cout << std::setprecision(2);
     std::cout << "PRECIO: " << getPrecio() << std::endl;
     std::cout << "ESTADO: " << getEstado() << std::endl;
-
-    std::cout << "-------------------------------" << std::endl;
+    std::cout << std::setw(25) << std::setfill('-') << "-" << std::endl;
 }
+
+
 

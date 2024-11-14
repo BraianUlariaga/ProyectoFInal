@@ -13,11 +13,11 @@ public:
     int CantidadRegistros();
     int BuscarAuto(char* patente);
     bool ModificarAuto(Automovil& vehiculo, int pos);
-    void BuscarAutosPorMarca();
-    void BuscarAutosPorAnio();
-    void BuscarAutosPorTipo();
-    void BuscarAutosPorKm(int km);
-    void BuscarAutosPorPrecio(double precio);
-    void MarcaMasVendida();
+    static void BuscarAutosPorMarca();
+    static void BuscarAutosPorAnio();
+    static void BuscarAutosPorTipo();
+    static void BuscarAutosPorKm();
+    static void BuscarAutosPorPrecio();
+    static void MarcaMasVendida();
 
 };
